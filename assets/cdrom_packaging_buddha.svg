@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="jewelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="3%" stop-color="#4A5568"/>
+      <stop offset="6%" stop-color="#1A202C"/>
+      <stop offset="100%" stop-color="#0F131C"/>
+    </linearGradient>
+    <linearGradient id="coverArtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142B3B"/>
+      <stop offset="100%" stop-color="#0B1924"/>
+    </linearGradient>
+    <radialGradient id="cdShine" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.9"/>
+      <stop offset="25%" stop-color="#1A202C"/>
+      <stop offset="38%" stop-color="#2D3748"/>
+      <stop offset="42%" stop-color="#E2E8F0" stop-opacity="0.8"/>
+      <stop offset="48%" stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="55%" stop-color="#C084FC" stop-opacity="0.3"/>
+      <stop offset="65%" stop-color="#2DD4BF" stop-opacity="0.3"/>
+      <stop offset="85%" stop-color="#1A202C"/>
+      <stop offset="98%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#171923"/>
+    </radialGradient>
+    <filter id="caseShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="8" dy="16" stdDeviation="14" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#caseShadow)">
+    <!-- Acrylic Jewel Case Outer Box (Hinged Case) -->
+    <rect x="15" y="15" width="430" height="350" rx="8" fill="url(#jewelGrad)" stroke="#718096" stroke-width="1.5" stroke-opacity="0.6"/>
+    
+    <!-- Left Spine of CD-ROM Case (Transparent Ribbed Hinge) -->
+    <rect x="15" y="15" width="32" height="350" rx="6" fill="#1A202C" stroke="#A0AEC0" stroke-width="0.8" stroke-opacity="0.4"/>
+    <line x1="23" y1="20" x2="23" y2="360" stroke="#718096" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="31" y1="20" x2="31" y2="360" stroke="#718096" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="39" y1="20" x2="39" y2="360" stroke="#718096" stroke-width="1.5" stroke-opacity="0.5"/>
+
+    <!-- Left Spine Vertical Text -->
+    <text x="28" y="190" font-family="'Space Grotesk', sans-serif" font-size="8" font-weight="700" fill="#D4AF37" letter-spacing="2" transform="rotate(-90 28 190)" text-anchor="middle">CD-ROM INTERACTIVE • NPM MULTIMEDIA</text>
+
+    <!-- RIGHT: CD Disc Peeking Out From Tray -->
+    <g transform="translate(195, 20)">
+      <!-- The Compact Disc -->
+      <circle cx="160" cy="170" r="145" fill="url(#cdShine)" stroke="#A0AEC0" stroke-width="1"/>
+      <!-- Concentric Data Tracks -->
+      <circle cx="160" cy="170" r="135" fill="none" stroke="#CBD5E1" stroke-width="0.5" stroke-opacity="0.4"/>
+      <circle cx="160" cy="170" r="105" fill="none" stroke="#E2E8F0" stroke-width="0.5" stroke-opacity="0.2"/>
+      <circle cx="160" cy="170" r="75" fill="none" stroke="#CBD5E1" stroke-width="0.5" stroke-opacity="0.3"/>
+      <!-- Inner Mirror Hub Area -->
+      <circle cx="160" cy="170" r="48" fill="#2D3748" stroke="#E2E8F0" stroke-width="1"/>
+      <circle cx="160" cy="170" r="32" fill="#1A202C" stroke="#CBD5E1" stroke-width="1"/>
+      <!-- Spindle Hole -->
+      <circle cx="160" cy="170" r="18" fill="#0C101A" stroke="#718096" stroke-width="1.5"/>
+      <!-- Disc Top Label Text -->
+      <text x="160" y="85" font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="700" fill="#F7E7C4" text-anchor="middle" letter-spacing="1">COMPACT DISC</text>
+      <text x="160" y="100" font-family="'Noto Sans TC', sans-serif" font-size="8" fill="#E2E8F0" text-anchor="middle">互動多媒體光碟</text>
+    </g>
+
+    <!-- FRONT: Jewel Case Front Booklet Cover (Inlay Card) -->
+    <g transform="translate(52, 22)">
+      <rect width="310" height="336" rx="4" fill="url(#coverArtGrad)" stroke="#4A5568" stroke-width="1"/>
+      
+      <!-- Top Museum Badge -->
+      <rect x="18" y="18" width="130" height="22" rx="3" fill="#000000" fill-opacity="0.6" stroke="#D4AF37" stroke-width="0.8"/>
+      <text x="83" y="32" font-family="'Noto Serif TC', serif" font-size="9" font-weight="700" fill="#F7E7C4" text-anchor="middle">國立故宮博物院</text>
+
+      <!-- Year and Format -->
+      <text x="290" y="32" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="600" fill="#CBD5E1" text-anchor="end">2003 • CD-ROM</text>
+      <line x1="18" y1="46" x2="292" y2="46" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.4"/>
+
+      <!-- Award Laurels Banner on Cover -->
+      <g transform="translate(18, 65)">
+        <rect width="274" height="26" rx="4" fill="#D4AF37" fill-opacity="0.15" stroke="#D4AF37" stroke-width="0.8"/>
+        <text x="137" y="17" font-family="'Noto Sans TC', sans-serif" font-size="9.5" font-weight="700" fill="#FFF5D1" text-anchor="middle">🥈 美國 AAM 繆司獎銀牌獎 • 金學獎優等</text>
+      </g>
+
+      <!-- Main CD-ROM Title -->
+      <text x="155" y="165" font-family="'Noto Serif TC', serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">《佛經附圖》多媒體光碟</text>
+      <text x="155" y="190" font-family="'Cinzel', serif" font-size="10" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="2">BUDDHIST ART MINIATURES</text>
+
+      <!-- Decorative Divider -->
+      <line x1="105" y1="210" x2="205" y2="210" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.7"/>
+
+      <!-- Production Role Block -->
+      <rect x="18" y="248" width="274" height="68" rx="4" fill="#000000" fill-opacity="0.65" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.15"/>
+      <text x="28" y="270" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#E2E8F0">多媒體專案製作統籌 / 技術指導 / 音樂：</text>
+      <text x="28" y="288" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#D4AF37">陳宏佳 博士 (Hung-Chia Chen, Ph.D.)</text>
+      <text x="28" y="304" font-family="'Space Grotesk', sans-serif" font-size="8" fill="#94A3B8">INTERACTIVE MULTIMEDIA ARCHITECTURE</text>
+    </g>
+
+    <!-- Glass Reflection Diagonal Sheen -->
+    <path d="M 52,22 L 240,22 L 52,280 Z" fill="#FFFFFF" fill-opacity="0.04" pointer-events="none"/>
+    <rect x="52" y="22" width="310" height="336" rx="4" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.15" pointer-events="none"/>
+  </g>
+</svg>

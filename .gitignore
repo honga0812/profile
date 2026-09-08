@@ -1,0 +1,5 @@
+*.tmp
+*.temp
+scratch_*.txt
+.DS_Store
+Thumbs.db

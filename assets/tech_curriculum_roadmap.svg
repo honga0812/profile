@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="50%" stop-color="#0E1422"/>
+      <stop offset="100%" stop-color="#070A10"/>
+    </linearGradient>
+    <linearGradient id="goldLuxe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF3D1"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9C7A28"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <pattern id="techGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="nodeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="600" rx="14" fill="url(#bgGrad)" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.3"/>
+  <rect width="1000" height="600" rx="14" fill="url(#techGrid)"/>
+
+  <!-- Top Title Header -->
+  <g transform="translate(40, 42)">
+    <text x="0" y="0" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="3">CURRICULUM &amp; TECHNOLOGY ROADMAP // 資訊技術發展及教學藍圖</text>
+    <text x="0" y="24" font-family="'Noto Serif TC', serif" font-size="20" font-weight="800" fill="#FFFFFF">陳宏佳 博士 • 資訊技術演進、開課教學與產學技術地圖</text>
+    <text x="0" y="42" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#94A3B8">貫通「底層系統架構 ➔ 數據中台與商業智慧 ➔ 生成式 AI 與智能體 ➔ 企業轉型與永續策略」四大進階維度</text>
+  </g>
+
+  <!-- Right Legend -->
+  <g transform="translate(680, 36)">
+    <rect width="280" height="42" rx="6" fill="#131B2C" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.3"/>
+    <circle cx="20" cy="21" r="5" fill="#D4AF37"/>
+    <text x="32" y="25" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#F1F5F9">★ 全英語 EMI 核心課程</text>
+    <rect x="155" y="15" width="12" height="12" rx="2" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1"/>
+    <text x="175" y="25" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#CBD5E1">資訊技術專業課程</text>
+  </g>
+
+  <!-- Central Progression Spine Line (Left to Right / Bottom to Top Flow) -->
+  <path d="M 120 520 L 120 150" stroke="#38BDF8" stroke-width="2" stroke-opacity="0.2" stroke-dasharray="4,4"/>
+
+  <!-- =========================================================================
+       LAYER 4 (TOP): 產學AI轉型與永續策略 (ENTERPRISE AI TRANSFORMATION & MOT)
+       ========================================================================= -->
+  <g transform="translate(60, 115)" filter="url(#nodeGlow)">
+    <!-- Stage Indicator Pill -->
+    <rect x="0" y="0" width="120" height="90" rx="8" fill="#1A1F2C" stroke="#D4AF37" stroke-width="1.2"/>
+    <text x="60" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#D4AF37" text-anchor="middle">LEVEL // 04</text>
+    <text x="60" y="48" font-family="'Noto Serif TC', serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">產學策略</text>
+    <text x="60" y="66" font-family="'Noto Sans TC', sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">轉型與治理</text>
+
+    <!-- Main Content Container -->
+    <rect x="135" y="0" width="765" height="90" rx="8" fill="#101726" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.4"/>
+    <line x1="120" y1="45" x2="135" y2="45" stroke="#D4AF37" stroke-width="2"/>
+
+    <!-- Course Chips -->
+    <g transform="translate(155, 18)">
+      <!-- Course 1: EMI -->
+      <rect width="210" height="26" rx="4" fill="#D4AF37" fill-opacity="0.15" stroke="#D4AF37" stroke-width="1"/>
+      <text x="105" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700" fill="#FFF2CE" text-anchor="middle">★ 企業倫理與永續管理 (EMI)</text>
+
+      <!-- Course 2 -->
+      <rect x="225" width="180" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="315" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">AI與創新顧客關係管理 (CRM)</text>
+
+      <!-- Course 3 -->
+      <rect x="420" width="140" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="490" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">科技管理 (MOT)</text>
+
+      <!-- Course 4 -->
+      <rect x="575" width="150" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="650" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">商業模式創新與永續</text>
+
+      <!-- Skills Subtitle -->
+      <text x="5" y="52" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#94A3B8">PRACTICE &amp; GOVERNANCE:</text>
+      <text x="165" y="52" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#CBD5E1">經濟部產業發展局 審查委員 • 企業 AI 轉型輔導 • 永續深度學習學術發表 (SSCI IF=3.9)</text>
+    </g>
+  </g>
+
+  <!-- Connection Arrow 3 to 4 -->
+  <path d="M 520 220 L 520 205" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="520,205 516,211 524,211" fill="#38BDF8"/>
+
+  <!-- =========================================================================
+       LAYER 3: 前沿生成式 AI 與多媒體智能體 (GENERATIVE AI & AGENTIC MULTIMEDIA)
+       ========================================================================= -->
+  <g transform="translate(60, 225)" filter="url(#nodeGlow)">
+    <rect x="0" y="0" width="120" height="90" rx="8" fill="#132338" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="60" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#38BDF8" text-anchor="middle">LEVEL // 03</text>
+    <text x="60" y="48" font-family="'Noto Serif TC', serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">生成式 AI</text>
+    <text x="60" y="66" font-family="'Noto Sans TC', sans-serif" font-size="9" fill="#7DD3FC" text-anchor="middle">RAG 與多媒體</text>
+
+    <rect x="135" y="0" width="765" height="90" rx="8" fill="#0C1929" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5"/>
+    <line x1="120" y1="45" x2="135" y2="45" stroke="#38BDF8" stroke-width="2"/>
+
+    <g transform="translate(155, 18)">
+      <!-- Course 1: EMI Core -->
+      <rect width="250" height="26" rx="4" fill="#D4AF37" fill-opacity="0.18" stroke="#D4AF37" stroke-width="1.2"/>
+      <text x="125" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700" fill="#FFF2CE" text-anchor="middle">★ 生成式人工智慧與多媒體應用 (EMI)</text>
+
+      <!-- Course 2 -->
+      <rect x="265" width="165" height="26" rx="4" fill="#172554" stroke="#38BDF8" stroke-width="1"/>
+      <text x="347" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="600" fill="#BAE6FD" text-anchor="middle">生成式人工智慧實務</text>
+
+      <!-- Course 3 -->
+      <rect x="445" width="135" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="512" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">數位匯流應用</text>
+
+      <!-- Course 4 -->
+      <rect x="595" width="130" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="660" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">傳播科技與音樂</text>
+
+      <text x="5" y="52" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#38BDF8">TECH &amp; CERTIFICATION:</text>
+      <text x="165" y="52" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#CBD5E1">NVIDIA RAG Agents with LLMs 原廠認證 • 檢索增強生成 • 向量檢索 (Vector DB) • 智能體工作流</text>
+    </g>
+  </g>
+
+  <!-- Connection Arrow 2 to 3 -->
+  <path d="M 520 330 L 520 315" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="520,315 516,321 524,321" fill="#38BDF8"/>
+
+  <!-- =========================================================================
+       LAYER 2: 商業智慧與大數據中台 (BI, BIG DATA ANALYTICS & FINTECH)
+       ========================================================================= -->
+  <g transform="translate(60, 335)" filter="url(#nodeGlow)">
+    <rect x="0" y="0" width="120" height="90" rx="8" fill="#162033" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="60" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#38BDF8" text-anchor="middle">LEVEL // 02</text>
+    <text x="60" y="48" font-family="'Noto Serif TC', serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">數據與智慧</text>
+    <text x="60" y="66" font-family="'Noto Sans TC', sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">BI 與金融科技</text>
+
+    <rect x="135" y="0" width="765" height="90" rx="8" fill="#0D1524" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="45" x2="135" y2="45" stroke="#38BDF8" stroke-width="2"/>
+
+    <g transform="translate(155, 18)">
+      <rect width="140" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="70" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">商業智慧 (BI)</text>
+
+      <rect x="155" width="160" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="235" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">大數據分析與應用</text>
+
+      <rect x="330" width="150" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="405" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">金融科技 (FinTech)</text>
+
+      <rect x="495" width="175" height="26" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+      <text x="582" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">管理資訊系統 (MIS)</text>
+
+      <text x="5" y="52" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#38BDF8">DATA &amp; DECISION:</text>
+      <text x="165" y="52" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#CBD5E1">Power BI 視覺化 • Python 數據管線 • 伊索企業/資策會 BI 專案顧問 • Google GAIQ 分析認證</text>
+    </g>
+  </g>
+
+  <!-- Connection Arrow 1 to 2 -->
+  <path d="M 520 440 L 520 425" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <polygon points="520,425 516,431 524,431" fill="#38BDF8"/>
+
+  <!-- =========================================================================
+       LAYER 1: 基礎系統與數據底層 (SYSTEMS & DATABASE INFRASTRUCTURE)
+       ========================================================================= -->
+  <g transform="translate(60, 445)" filter="url(#nodeGlow)">
+    <rect x="0" y="0" width="120" height="90" rx="8" fill="#131926" stroke="#94A3B8" stroke-width="1"/>
+    <text x="60" y="28" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="800" fill="#94A3B8" text-anchor="middle">LEVEL // 01</text>
+    <text x="60" y="48" font-family="'Noto Serif TC', serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">基礎基石</text>
+    <text x="60" y="66" font-family="'Noto Sans TC', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">系統與資料庫</text>
+
+    <rect x="135" y="0" width="765" height="90" rx="8" fill="#0A101C" stroke="#94A3B8" stroke-width="1" stroke-opacity="0.3"/>
+    <line x1="120" y1="45" x2="135" y2="45" stroke="#94A3B8" stroke-width="2"/>
+
+    <g transform="translate(155, 18)">
+      <rect width="175" height="26" rx="4" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/>
+      <text x="87" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">資料庫系統及應用 (SQL)</text>
+
+      <rect x="190" width="165" height="26" rx="4" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/>
+      <text x="272" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">系統分析與設計</text>
+
+      <rect x="370" width="180" height="26" rx="4" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/>
+      <text x="460" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">商業軟體與程式設計</text>
+
+      <rect x="565" width="160" height="26" rx="4" fill="#1E293B" stroke="#94A3B8" stroke-width="0.8"/>
+      <text x="645" y="17" font-family="'Noto Sans TC', sans-serif" font-size="10.5" fill="#E2E8F0" text-anchor="middle">計算機概論 / 網路</text>
+
+      <text x="5" y="52" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#94A3B8">ENGINEERING &amp; CERTS:</text>
+      <text x="165" y="52" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#CBD5E1">MCSE / MCSA 微軟系統工程師 • CCNA 思科網路工程師 • 和信超媒體 SE/SI • 歐特斯科技電信平台處經理 • 國家級 e-Taiwan / m-Taiwan 計畫</text>
+    </g>
+  </g>
+
+  <!-- Bottom Caption Footer -->
+  <g transform="translate(60, 565)">
+    <line x1="0" y1="0" x2="880" y2="0" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.2"/>
+    <text x="0" y="18" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#94A3B8">TAIPEI TECH • DEPT. OF INFORMATION &amp; FINANCE MANAGEMENT • PH.D. IN MIS // HUNG-CHIA CHEN</text>
+    <text x="880" y="18" font-family="'Noto Sans TC', sans-serif" font-size="9" fill="#D4AF37" text-anchor="end">連續四階技術實戰演進 • 產官學教研合一</text>
+  </g>
+</svg>

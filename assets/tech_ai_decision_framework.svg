@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080D1A"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131F38"/>
+      <stop offset="100%" stop-color="#0D1627"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="920" height="420" rx="16" fill="url(#bgGrad)" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.35"/>
+  <rect width="920" height="420" rx="16" fill="url(#grid)"/>
+
+  <!-- Blueprint Header -->
+  <g transform="translate(36, 34)">
+    <rect width="6" height="28" rx="3" fill="#38BDF8"/>
+    <text x="16" y="16" font-family="'Space Grotesk', 'Noto Sans TC', sans-serif" font-size="14" font-weight="700" fill="#38BDF8" letter-spacing="1.5">
+      AI &amp; DATA-DRIVEN APPLICATION FRAMEWORK // 人工智慧與大數據跨域決策應用架構
+    </text>
+    <text x="16" y="32" font-family="'Noto Sans TC', sans-serif" font-size="11.5" fill="#94A3B8">
+      陳宏佳博士 核心研究與教學實務：結合 NVIDIA RAG LLM、深度學習演算法（SSCI 期刊）與商業智慧決策
+    </text>
+  </g>
+
+  <!-- ============================================================
+       TIER 1: 數據與知識基礎層 (Bottom Data Foundation)
+       ============================================================ -->
+  <g transform="translate(36, 85)">
+    <rect width="848" height="74" rx="10" fill="#0E1626" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.25"/>
+    <rect x="14" y="12" width="160" height="22" rx="4" fill="#38BDF8" fill-opacity="0.15"/>
+    <text x="94" y="27" font-family="'Space Grotesk', 'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700" fill="#38BDF8" text-anchor="middle">
+      LEVEL 01 // 數據與知識底層
+    </text>
+    
+    <g transform="translate(190, 16)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="150" height="42" rx="6" fill="#152138" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.3"/>
+        <text x="75" y="19" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">企業營運與交易資料</text>
+        <text x="75" y="33" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">ERP / SQL / POS Database</text>
+      </g>
+      <!-- Item 2 -->
+      <g transform="translate(162, 0)">
+        <rect width="150" height="42" rx="6" fill="#152138" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.3"/>
+        <text x="75" y="19" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">顧客行為與網路數據</text>
+        <text x="75" y="33" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">GAIQ / CRM / Social Data</text>
+      </g>
+      <!-- Item 3 -->
+      <g transform="translate(324, 0)">
+        <rect width="156" height="42" rx="6" fill="#152138" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.3"/>
+        <text x="78" y="19" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">文博多媒體數位資產</text>
+        <text x="78" y="33" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">故宮數位典藏 / 影音資料庫</text>
+      </g>
+      <!-- Item 4 -->
+      <g transform="translate(492, 0)">
+        <rect width="150" height="42" rx="6" fill="#152138" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.3"/>
+        <text x="75" y="19" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle">非結構化文本與音訊</text>
+        <text x="75" y="33" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#64748B" text-anchor="middle">Multi-modal Audio &amp; Text</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connective Arrows Upward -->
+  <g stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6">
+    <line x1="280" y1="160" x2="280" y2="185"/>
+    <line x1="460" y1="160" x2="460" y2="185"/>
+    <line x1="640" y1="160" x2="640" y2="185"/>
+  </g>
+
+  <!-- ============================================================
+       TIER 2: AI 核心演算法與模型架構 (Middle AI Core)
+       ============================================================ -->
+  <g transform="translate(36, 186)">
+    <rect width="848" height="92" rx="10" fill="#111B30" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <rect x="14" y="12" width="160" height="22" rx="4" fill="#D4AF37" fill-opacity="0.18"/>
+    <text x="94" y="27" font-family="'Space Grotesk', 'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700" fill="#FDE68A" text-anchor="middle">
+      LEVEL 02 // AI 核心模型與演算法
+    </text>
+
+    <g transform="translate(190, 12)">
+      <!-- Core 1: NVIDIA RAG LLM -->
+      <g transform="translate(0, 0)">
+        <rect width="206" height="66" rx="8" fill="#182542" stroke="#38BDF8" stroke-width="1.2"/>
+        <rect x="8" y="8" width="80" height="16" rx="3" fill="#38BDF8" fill-opacity="0.2"/>
+        <text x="48" y="19" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" fill="#38BDF8" text-anchor="middle">NVIDIA 原廠認證</text>
+        <text x="103" y="38" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">NVIDIA RAG LLM 智能體</text>
+        <text x="103" y="55" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">檢索增強生成 • 消除幻覺精準問答</text>
+      </g>
+
+      <!-- Core 2: Deep Learning Framework (SSCI) -->
+      <g transform="translate(220, 0)">
+        <rect width="206" height="66" rx="8" fill="#182542" stroke="#D4AF37" stroke-width="1.2"/>
+        <rect x="8" y="8" width="80" height="16" rx="3" fill="#D4AF37" fill-opacity="0.2"/>
+        <text x="48" y="19" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" fill="#FDE68A" text-anchor="middle">SSCI 頂級期刊論文</text>
+        <text x="103" y="38" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">深度學習跨域框架模型</text>
+        <text x="103" y="55" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">Deep Learning Online Framework</text>
+      </g>
+
+      <!-- Core 3: BI & Analytics -->
+      <g transform="translate(440, 0)">
+        <rect width="206" height="66" rx="8" fill="#182542" stroke="#38BDF8" stroke-width="1.2"/>
+        <rect x="8" y="8" width="80" height="16" rx="3" fill="#38BDF8" fill-opacity="0.2"/>
+        <text x="48" y="19" font-family="'Space Grotesk', sans-serif" font-size="9" font-weight="700" fill="#38BDF8" text-anchor="middle">資策會/伊索顧問</text>
+        <text x="103" y="38" font-family="'Noto Sans TC', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">商業智慧與大數據中台</text>
+        <text x="103" y="55" font-family="'Space Grotesk', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">Business Intelligence &amp; Analytics</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Connective Arrows Upward -->
+  <g stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6">
+    <line x1="280" y1="279" x2="280" y2="300"/>
+    <line x1="460" y1="279" x2="460" y2="300"/>
+    <line x1="640" y1="279" x2="640" y2="300"/>
+  </g>
+
+  <!-- ============================================================
+       TIER 3: 落地應用與跨域賦能 (Top Real-World Applications)
+       ============================================================ -->
+  <g transform="translate(36, 301)">
+    <rect width="848" height="78" rx="10" fill="#0C1424" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.3"/>
+    <rect x="14" y="12" width="160" height="22" rx="4" fill="#38BDF8" fill-opacity="0.15"/>
+    <text x="94" y="27" font-family="'Space Grotesk', 'Noto Sans TC', sans-serif" font-size="10.5" font-weight="700" fill="#38BDF8" text-anchor="middle">
+      LEVEL 03 // 跨領域實務賦能
+    </text>
+
+    <g transform="translate(190, 12)">
+      <!-- App 1: 產業AI轉型與政府計畫 -->
+      <g transform="translate(0, 0)">
+        <rect width="206" height="52" rx="6" fill="#131E35" stroke="#38BDF8" stroke-width="0.8"/>
+        <text x="103" y="22" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#BAE6FD" text-anchor="middle">產業 AI 數位轉型與國家計畫</text>
+        <text x="103" y="39" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">經濟部審查委員 • e-Taiwan/m-Taiwan</text>
+      </g>
+
+      <!-- App 2: 智慧顧客關係管理 (AI-CRM) -->
+      <g transform="translate(220, 0)">
+        <rect width="206" height="52" rx="6" fill="#131E35" stroke="#38BDF8" stroke-width="0.8"/>
+        <text x="103" y="22" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#BAE6FD" text-anchor="middle">智慧顧客關係管理 (AI-CRM)</text>
+        <text x="103" y="39" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">精準數據驅動行銷 • 消費者決策模型</text>
+      </g>
+
+      <!-- App 3: 生成式多媒體與內容創新 -->
+      <g transform="translate(440, 0)">
+        <rect width="206" height="52" rx="6" fill="#131E35" stroke="#38BDF8" stroke-width="0.8"/>
+        <text x="103" y="22" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#BAE6FD" text-anchor="middle">生成式多媒體與數位內容產製</text>
+        <text x="103" y="39" font-family="'Noto Sans TC', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">北科大 EMI 英語授課 • 數位文博創新</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Academic Credential Bar -->
+  <g transform="translate(36, 392)">
+    <text x="0" y="12" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#64748B">
+      ✦ 本架構全面忠實依據陳宏佳博士之真實經歷：北科大管理博士論文、SSCI 期刊發表、NVIDIA RAG LLM 認證與經濟部專案顧問經驗建構。
+    </text>
+  </g>
+</svg>

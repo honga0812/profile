@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E2B3"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8C6D23"/>
+    </linearGradient>
+    <radialGradient id="discGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#D4AF37" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="250" cy="250" r="240" fill="url(#discGlow)"/>
+
+  <!-- Outer Dials & Calibrations -->
+  <circle cx="250" cy="250" r="230" fill="none" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="4,6"/>
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#D4AF37" stroke-width="0.7" stroke-opacity="0.2"/>
+  <circle cx="250" cy="250" r="195" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Concentric Vinyl Grooves -->
+  <circle cx="250" cy="250" r="175" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.25"/>
+  <circle cx="250" cy="250" r="160" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle cx="250" cy="250" r="145" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.3" stroke-dasharray="2,4"/>
+  <circle cx="250" cy="250" r="130" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.2"/>
+  <circle cx="250" cy="250" r="110" fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-opacity="0.4"/>
+
+  <!-- Radial Audio / Astrolabe Rays -->
+  <g stroke="#D4AF37" stroke-width="0.8" stroke-opacity="0.25">
+    <line x1="250" y1="10" x2="250" y2="40"/>
+    <line x1="250" y1="460" x2="250" y2="490"/>
+    <line x1="10" y1="250" x2="40" y2="250"/>
+    <line x1="460" y1="250" x2="490" y2="250"/>
+    <line x1="80" y1="80" x2="105" y2="105"/>
+    <line x1="395" y1="395" x2="420" y2="420"/>
+    <line x1="80" y1="420" x2="105" y2="395"/>
+    <line x1="395" y1="105" x2="420" y2="80"/>
+  </g>
+
+  <!-- Technical Astrolabe Coordinates & Ring Text -->
+  <path id="textArc1" d="M 75,250 A 175,175 0 0,1 425,250" fill="none"/>
+  <text font-family="'Cinzel', 'Noto Sans TC', serif" font-size="9" fill="#D4AF37" fill-opacity="0.7" letter-spacing="4">
+    <textPath href="#textArc1" startOffset="50%" text-anchor="middle">
+      • ARCHITECT OF SOUND, LOGIC &amp; STRATEGY •
+    </textPath>
+  </text>
+
+  <path id="textArc2" d="M 425,250 A 175,175 0 0,1 75,250" fill="none"/>
+  <text font-family="'Cinzel', 'Noto Sans TC', serif" font-size="8.5" fill="#D4AF37" fill-opacity="0.5" letter-spacing="3">
+    <textPath href="#textArc2" startOffset="50%" text-anchor="middle">
+      PH.D. IN MIS • MASTER SOUND PRODUCER • EMI MENTOR
+    </textPath>
+  </text>
+
+  <!-- Inner Center Medallion -->
+  <circle cx="250" cy="250" r="85" fill="#0C0E14" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="250" cy="250" r="80" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-dasharray="3,3" stroke-opacity="0.5"/>
+
+  <!-- Center Monogram -->
+  <text x="250" y="240" font-family="'Cinzel', serif" font-size="34" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">HC</text>
+  <line x1="210" y1="252" x2="290" y2="252" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="250" y="268" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="600" fill="#E2E8F0" text-anchor="middle" letter-spacing="3">陳宏佳 博士</text>
+  <text x="250" y="282" font-family="'Space Grotesk', sans-serif" font-size="8" fill="#94A3B8" text-anchor="middle" letter-spacing="1">1995 — 2026</text>
+</svg>
