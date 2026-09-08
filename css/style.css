@@ -375,6 +375,69 @@ body {
   box-shadow: 0 6px 18px var(--primary-glow);
 }
 
+.header-action-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-card);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(15, 23, 42, 0.04);
+}
+
+.lang-switch-btn:hover {
+  background: #F1F5F9;
+  border-color: var(--primary-accent);
+  color: var(--primary-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* English Specific Typography & Layout Refinements */
+body.lang-en {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.62;
+  letter-spacing: -0.01em;
+}
+
+body.lang-en .profile-name-main {
+  font-size: 2.15rem;
+  letter-spacing: 0.5px;
+}
+
+body.lang-en .role-hero-title {
+  font-size: 1.85rem;
+  line-height: 1.35;
+}
+
+body.lang-en .sub-title-bar h3 {
+  font-size: 1.25rem;
+  letter-spacing: 0.2px;
+}
+
+body.lang-en .synergy-case-title {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+body.lang-en .lp-album-title {
+  font-size: 1.1rem;
+}
+
 /* ==========================================================================
    PERSONAL IMAGE MANAGEMENT PROFILE CARD (形象管理專屬卡片 - 高對比典雅亮色)
    ========================================================================== */
