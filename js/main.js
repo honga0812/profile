@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
       sub: 'TRIPLE-DOMAIN INTEGRATION & SYNERGY NEXUS',
       theme: 'role-all',
       icon: '🌐',
-      pdf: 'downloads/Dr_Chen_Tech_AI_Portfolio.pdf',
-      pdfText: '📥 下載陳宏佳博士完整專業履歷 (PDF)'
+      pdf: 'downloads/Dr_Chen_Full_Comprehensive_Portfolio.pdf',
+      pdfText: '📥 下載陳宏佳博士完整全景專業履歷 (PDF)'
     }
   };
 
