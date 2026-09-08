@@ -114,8 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Default active role is TECH (資訊科技人)
-  switchRole('tech', false);
+  // Initial Role Detection (Supports URL hash #strategy, query ?role=all, or defaults to tech)
+  const urlParams = new URLSearchParams(window.location.search);
+  const paramRole = urlParams.get('role');
+  const hashRole = window.location.hash.replace('#', '').toLowerCase();
+  const validRoles = ['tech', 'strategy', 'media', 'all'];
+  const initialRole = validRoles.includes(paramRole) ? paramRole :
+                      validRoles.includes(hashRole) ? hashRole : 'tech';
+
+  switchRole(initialRole, false);
 
   // 2. Interactive Synergy Cases Filtering inside #roleBlockAll
   const synergyFilterBtns = document.querySelectorAll('.synergy-pill-btn');
@@ -182,18 +189,18 @@ document.addEventListener('DOMContentLoaded', () => {
     function animate() {
       ctx.clearRect(0, 0, width, height);
 
-      let strokeColor = 'rgba(56, 189, 248, 0.1)';
-      let nodeColor = 'rgba(56, 189, 248, 0.4)';
+      let strokeColor = 'rgba(2, 132, 199, 0.12)';
+      let nodeColor = 'rgba(2, 132, 199, 0.45)';
 
       if (document.body.classList.contains('role-strategy')) {
-        strokeColor = 'rgba(229, 192, 123, 0.09)';
-        nodeColor = 'rgba(229, 192, 123, 0.35)';
+        strokeColor = 'rgba(180, 83, 9, 0.12)';
+        nodeColor = 'rgba(180, 83, 9, 0.45)';
       } else if (document.body.classList.contains('role-media')) {
-        strokeColor = 'rgba(212, 175, 55, 0.08)';
-        nodeColor = 'rgba(212, 175, 55, 0.35)';
+        strokeColor = 'rgba(133, 77, 14, 0.12)';
+        nodeColor = 'rgba(133, 77, 14, 0.45)';
       } else if (document.body.classList.contains('role-all')) {
-        strokeColor = 'rgba(56, 189, 248, 0.08)';
-        nodeColor = 'rgba(253, 230, 138, 0.35)';
+        strokeColor = 'rgba(29, 78, 216, 0.12)';
+        nodeColor = 'rgba(180, 83, 9, 0.45)';
       }
 
       for (let i = 0; i < particles.length; i++) {
